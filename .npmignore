@@ -1,0 +1,18 @@
+.cache
+node_modules
+src
+demo
+.babelrc
+.gitignore
+webpack.config.js
+rollup.config.js
+tsconfig.json
+
+# ignore dist test files
+dist/*
+!dist/index.js
+!dist/index.css
+!dist/types/*
+
+index.js
+index.html
