@@ -72,7 +72,7 @@ export default class IndexMap<T, K extends keyof T> {
     add(...values: T[]) {
         for (const value of values) {
             const spareDataIndex = this._spareDataIds.pop();
-            const dataIndex = spareDataIndex || this._data.size;
+            const dataIndex = spareDataIndex ?? this._data.size;
             this._data.set(dataIndex, value);
 
             for (const index of this._indexes) {
@@ -107,9 +107,6 @@ export default class IndexMap<T, K extends keyof T> {
 
                             if (matches && matches.size === 0)
                                 index[1].delete(dataAtIndex);
-
-                            if (index[1].size === 0)
-                                this._indexes.delete(index[0]);
                         }
 
                         this._data.delete(dataIndex);
