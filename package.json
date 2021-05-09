@@ -1,9 +1,14 @@
 {
   "name": "ts-index-map",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A data structure that allows indexing by multiple fields for fast data access.",
   "repository": "https://github.com/cph0/ts-index-map",
-  "keywords": [ "map", "multi", "index", "fast" ],
+  "keywords": [
+    "map",
+    "multi",
+    "index",
+    "fast"
+  ],
   "author": "Christian Harrison",
   "license": "ISC",
   "main": "./dist/index.js",
