@@ -7,7 +7,11 @@ import pkg from './package.json';
 export default {
     input: pkg.source,
     output: [
-        { file: pkg.main }
+        {
+            file: pkg.main,
+            format: 'cjs',
+            exports: 'default'
+        }
     ],
     plugins: [
         typescript({
