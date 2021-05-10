@@ -14,7 +14,7 @@ function test() {
         b: 2,
         c: 1
     }];
-    const Indexed = new IndexMap(Data, ['a', 'b', 'c']);
+    const Indexed = new IndexMap(['a', 'b', 'c'], Data);
 
     const A1 = Indexed.get('a', 1);
     const B2 = Indexed.get('b', 2);
