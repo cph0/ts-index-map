@@ -13,7 +13,7 @@ import IndexMap from 'ts-index-map';
 function Get() {
     const Data = [{a: 1, b: 2, c: 3}, 
     {a: 1, b: 3, c: 2}, {a: 3, b: 2, c: 1}];
-    const Indexed = new IndexMap(Data, ['a', 'b']);
+    const Indexed = new IndexMap(['a', 'b'], Data);
 
     const A1 = Indexed.get('a', 1);
     const B2 = Indexed.get('b', 2);
@@ -29,7 +29,7 @@ function Get() {
 ## API
 
 ```typescript
-new IndexMap(data, indexes); //data and indexes are optional
+new IndexMap(indexes, data); //data and indexes are optional
 size; //the number of data entries
 indexes; //the number of indexes
 addIndex(field); //indexes the data by another index
