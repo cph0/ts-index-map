@@ -34,7 +34,9 @@ size; //the number of data entries
 indexes; //the number of indexes
 addIndex(field); //indexes the data by another index
 removeIndex(field); //removes an index
+values(); //gets an iterable of values
 add(...data); //adds data
+has(field, value); //does the data exist by field and value
 get(field, value); //gets the data by field and value
 delete(field, value); //removes the data by field and value
 ```

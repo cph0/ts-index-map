@@ -47,6 +47,10 @@ export default class IndexMap<T> {
             this._indexes.delete(field);
     }
 
+    values() {
+        return this._data.values();
+    }
+
     has(field: keyof T, key: T[keyof T]) {
         const map = this._indexes.get(field);
 
