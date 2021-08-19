@@ -8,9 +8,15 @@ export default {
     input: pkg.source,
     output: [
         {
+            file: pkg.module,
+            format: 'es',
+            name: pkg.name
+        },
+        {
             file: pkg.main,
             format: 'cjs',
-            exports: 'default'
+            exports: 'default',
+            name: pkg.name
         }
     ],
     plugins: [
