@@ -11,6 +11,7 @@
   ],
   "author": "Christian Harrison",
   "license": "ISC",
+  "module": "./dist/index.es.js",
   "main": "./dist/index.js",
   "source": "./src/index.ts",
   "types": "./dist/types/index.d.ts",
