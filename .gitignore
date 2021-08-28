@@ -50,6 +50,7 @@ Thumbs.db
 
 # parcel cache
 .cache
+.parcel-cache
 /.vs/VSWorkspaceState.json
 /.vs/TsIndexMap/v17/TestStore/0/000.testlog
 /.vs/TsIndexMap/v17/TestStore/0/testlog.manifest
