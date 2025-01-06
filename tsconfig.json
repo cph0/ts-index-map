@@ -17,8 +17,8 @@
     "sourceMap": true,
     "strict": true,
     "target": "ES2015",
-    "types": [ "node", "jest" ]
+    "types": [ "node" ]
   },
   "include": [ "src/**/*" ],
-  "exclude": [ "**/node_modules", "**/build", "**/dist", "**/*.md", "**/rollup.config.js" ]
+  "exclude": [ "**/node_modules", "**/build", "**/dist", "**/*.md", "**/rollup.config.mjs" ]
 }
