@@ -43,8 +43,7 @@ export default class IndexMap<T> {
     }
 
     removeIndex(field: keyof T) {
-        if (this._indexes.has(field))
-            this._indexes.delete(field);
+        return this._indexes.delete(field);
     }
 
     values() {
@@ -53,11 +52,7 @@ export default class IndexMap<T> {
 
     has(field: keyof T, key: T[keyof T]) {
         const map = this._indexes.get(field);
-
-        if (map)
-            return map.has(key);
-        else
-            return Array.from(this._data.values()).some(s => s[field] === key);
+        return map?.has(key) ?? Array.from(this._data.values()).some(s => s[field] === key);
     }
 
     get(field: keyof T, key: T[keyof T]) {
@@ -108,10 +103,10 @@ export default class IndexMap<T> {
                     const dataAtIndex = data[index[0]];
                     const matches = index[1].get(dataAtIndex);
 
-                    if (matches && matches.has(dataIndex))
+                    if (matches)
                         matches.delete(dataIndex);
 
-                    if (matches && matches.size === 0)
+                    if (matches?.size === 0)
                         index[1].delete(dataAtIndex);
                 }
 
