@@ -36,7 +36,7 @@ addIndex(field); //indexes the data by another index
 removeIndex(field); //removes an index
 values(); //gets an iterable of values
 add(...data); //adds data
-has(field, value); //does the data exist by field and value
-get(field, value); //gets the data by field and value
-delete(field, value); //removes the data by field and value
+has(field, key); //does the data exist by field and keu
+get(field, key); //gets the data by field and key
+delete(field, key); //removes the data by field and key
 ```
