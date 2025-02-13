@@ -2,7 +2,10 @@
   "name": "ts-index-map",
   "version": "1.0.5",
   "description": "A data structure that allows indexing by multiple fields for fast data access.",
-  "repository": "https://github.com/cph0/ts-index-map",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cph0/ts-index-map.git"
+  },
   "keywords": [
     "map",
     "multi",
